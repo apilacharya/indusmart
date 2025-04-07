@@ -6,7 +6,7 @@ import FooterCard from "../../components/FooterCard";
 const HomePage = () => {
   return (
     <div>
-      <section className='row container mt-5' style={{ height: "100%" }}>
+      <section className='row container mt-2' style={{ height: "100%" }}>
         <div className='col-12 col-md-6 d-flex flex-column justify-content-center align-items-center px-3 py-3'>
           <h1 className='text-black'>Leading Industrial Suppliers in Nepal</h1>
           <p className='text-black fs-6'>
@@ -30,11 +30,17 @@ const HomePage = () => {
         </div>
 
         <div>
-          <button className='btn btn-md btn-dark mt-5'>Learn More</button>
+          <Link className='btn btn-md btn-dark mt-5' to='/about'>
+            Learn More
+          </Link>
         </div>
       </section>
 
-      <section className='row container' id='about' style={{ height: "100%" }}>
+      <section
+        className='row container p-0'
+        id='about'
+        style={{ height: "100%" }}
+      >
         <div className='col-12 col-md-6 p-3'>
           <img
             className='h-100 w-100 object-fit-contain'
@@ -71,7 +77,9 @@ const HomePage = () => {
         </div>
 
         <div className='w-100 d-flex justify-content-end'>
-          <button className='btn btn-md btn-dark mt-3 px-5'>Get a Quote</button>
+          <Link className='btn btn-md btn-dark mt-3 px-5' to='/contact-us'>
+            Get a Quote
+          </Link>
         </div>
       </section>
 

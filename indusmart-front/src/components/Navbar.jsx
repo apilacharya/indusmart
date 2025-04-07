@@ -73,9 +73,22 @@ const NavbarComponent = () => {
             {/* Cart Icon */}
 
             <Nav.Link>
+              <Link to='/' className='text-decoration-none text-white fs-6'>
+                Home
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                to='/about'
+                className='text-decoration-none text-white fs-6'
+              >
+                About Us
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
               <Link
                 to='/products'
-                className='text-decoration-none text-white fs-5'
+                className='text-decoration-none text-white fs-6'
               >
                 Products
               </Link>
@@ -83,7 +96,7 @@ const NavbarComponent = () => {
             <Nav.Link>
               <Link
                 to='/contact-us'
-                className='text-decoration-none text-white fs-5'
+                className='text-decoration-none text-white fs-6'
               >
                 Contact
               </Link>

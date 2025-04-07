@@ -2,7 +2,7 @@ import axios from "axios";
 
 //creating backend confug
 const api = axios.create({
-  // baseURL: "http://localhost:3006",
+  // baseURL: "http://localhost:3001",
   baseURL: "http://localhost:3001",
   withCredentials: true,
   headers: {
@@ -11,7 +11,7 @@ const api = axios.create({
 });
 
 const api2 = axios.create({
-  // baseURL: "http://localhost:3006",
+  // baseURL: "http://localhost:3001",
   baseURL: "http://localhost:3001",
   withCredentials: true,
   headers: {

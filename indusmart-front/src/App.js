@@ -26,6 +26,7 @@ import NavbarComponent from "./components/Navbar";
 import EsewaResponse from "./pages/cart/paymentGateway/esewa/EsewaResponse";
 import HomePage from "./pages/home/HomePage";
 import ContactUs from "./pages/contact/ContactUs";
+import AboutPage from "./pages/about/AboutPage";
 
 function UserLayout() {
   return (
@@ -43,6 +44,7 @@ function App() {
       <Routes>
         <Route element={<UserLayout />}>
           <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<AboutPage />} />
           <Route path='/products' element={<Dashboard />} />
           <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/login' element={<Login />} />
