@@ -89,7 +89,7 @@ describe("Testing API", () => {
   // cart
   // add to cart
 
-  it("POST /api/cart/addToCart | Should add Glass to cart", async () => {
+  it("POST /api/cart/addToCart | Should add Product to cart", async () => {
     const response = await request(app)
       .post("/api/cart/addToCart")
       .set("authorization", `Bearer ${token}`)
@@ -105,12 +105,12 @@ describe("Testing API", () => {
     if (response.body.success) {
       expect(response.body.message).toEqual("item added to cart successfully");
     } else {
-      expect(response.body.message).toEqual("Glass already in Cart");
+      expect(response.body.message).toEqual("Product already in Cart");
     }
   });
   // get cart by user id
 
-  it("GET /api/cart/getCartByUserID/:id | Should retrieve Glasss in cart for a user", async () => {
+  it("GET /api/cart/getCartByUserID/:id | Should retrieve Products in cart for a user", async () => {
     const userId = "66be4b22ea2a0245429abafc"; // Replace with an actual user ID
     const response = await request(app)
       .get(`/api/cart/getCartByUserID/${userId}`)

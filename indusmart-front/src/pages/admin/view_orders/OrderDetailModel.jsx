@@ -53,16 +53,10 @@ const OrderDetailsModal = ({ show, onHide, order, productsCache }) => {
   };
 
   return (
-    <Modal
-      show={show}
-      onHide={onHide}
-      centered
-      dialogClassName='custom-modal'
-      style={modalStyles.dialog}
-    >
-      <Modal.Header closeButton style={modalStyles.header}>
-        <Modal.Title style={modalStyles.title}>
-          Chasma Pasal Billing Voucher
+    <Modal show={show} onHide={onHide} centered dialogClassName='custom-modal'>
+      <Modal.Header closeButton>
+        <Modal.Title className='text-decoration-underline'>
+          Industromart Billing Voucher
         </Modal.Title>
       </Modal.Header>
       <Modal.Body style={modalStyles.body}>

@@ -17,14 +17,12 @@ const AdminNav = () => {
         <ul className='navbar-nav flex-column'>
           {/* <li className="nav-item"><Link to="/dashboard" className="nav-link">Dashboard</Link></li> */}
           <div className='logo mb-3'>
-            <Link className='navbar-brand d-flex align-items-center ms-1'>
-              <img
-                src='/assets/icon/main-logo.png'
-                alt='Logo'
-                style={{ width: "150px" }}
-                // className=' align-text-top'
-              />
-            </Link>
+            <p
+              role='button'
+              className='fs-4 fw-fw-semibold text-white cursor-pointer'
+            >
+              IndustroMart
+            </p>
           </div>
           <li className='nav-item'>
             <Link to='/admin' className='nav-link' style={{ fontSize: "1rem" }}>

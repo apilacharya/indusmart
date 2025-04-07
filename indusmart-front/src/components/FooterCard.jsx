@@ -39,7 +39,7 @@ const FooterCard = () => {
                   }}
                 ></div>
 
-                <p className='mt-4 text-light'>Email: chasmapasal@gmail.com</p>
+                <p className='mt-4 text-light'>Email: industromart@gmail.com</p>
                 <p className='text-light'>Location: Kathmandu, Nepal</p>
               </div>
 
@@ -184,10 +184,9 @@ const FooterCard = () => {
                   }}
                 ></div>
                 <p className='text-white'>
-                  Chasma Pasal – Your one-stop shop for stylish and high-quality
-                  eyewear. Explore a wide range of frames, sunglasses, and
-                  prescription glasses to suit your style and vision needs. See
-                  the world clearly with us!
+                  IndustroMart – Nepal’s trusted platform for industrial tools,
+                  equipment, and supplies. Simplifying industrial procurement
+                  with quality, reliability, and speed.
                 </p>
               </div>
             </div>
@@ -196,7 +195,7 @@ const FooterCard = () => {
         <div className=' w-100'>
           <div className='copyright-info text-light container bg-dark d-flex flex-column gap-4 align-items-center flex-lg-row justify-content-between pt-0 w-100 text-center'>
             <span className='text-center text-light w-100'>
-              Chasma Pasal - {new Date().toISOString().split("-")[0]} &copy; All
+              Industromart - {new Date().toISOString().split("-")[0]} &copy; All
               rights reserved.
             </span>
           </div>

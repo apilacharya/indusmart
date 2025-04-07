@@ -128,7 +128,7 @@ const Dashboard = () => {
   return (
     <>
       <div className='dashboard'>
-        <Banner />
+        {/* <Banner /> */}
         <div className='d-flex justify-content-between align-items-center'>
           <h4 className='pb-4 text-xl font-bold ms-5 mt-5'>Our Products</h4>
           <Form className='d-flex position-relative'>
