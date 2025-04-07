@@ -4,8 +4,10 @@ import { toast } from "react-toastify";
 import { registerUserApi } from "../../apis/api";
 import FooterCard from "../../components/FooterCard";
 import "./Register.css";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
   //usestate
   const [fullname, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -111,6 +113,7 @@ const Register = () => {
           toast.error(res.data.message);
         } else {
           toast.success(res.data.message);
+          navigate("/login");
         }
       })
       .catch((err) => {

@@ -84,7 +84,7 @@ const Cart = () => {
   }, []);
 
   const handleQuantityChange = (value, cart) => {
-    if (value < 1 || !cart.productID) return; // Add check for cart.productID
+    if (value < 10 || !cart.productID) return; // Add check for cart.productID
 
     const updatedCartItems = cartItems.map((item) =>
       item._id === cart._id
@@ -372,7 +372,7 @@ const Cart = () => {
                         <img
                           src={
                             cart.productID
-                              ? `http://localhost:3006/products/${cart.productID.productImage}`
+                              ? `http://localhost:3001/products/${cart.productID.productImage}`
                               : "/placeholder.png"
                           }
                           alt={

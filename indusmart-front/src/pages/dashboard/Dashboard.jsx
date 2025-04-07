@@ -164,7 +164,7 @@ const Dashboard = () => {
           paginate={paginate}
         />
 
-        {user?.isAdmin ? (
+        {/* {user?.isAdmin ? (
           <div style={{ position: "fixed", bottom: "80px", right: "40px" }}>
             <button
               style={{
@@ -185,7 +185,7 @@ const Dashboard = () => {
           </div>
         ) : (
           ""
-        )}
+        )} */}
       </div>
       <FooterCard />
     </>

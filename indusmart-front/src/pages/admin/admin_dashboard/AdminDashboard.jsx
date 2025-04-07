@@ -175,9 +175,34 @@ const AdminDashboard = () => {
                             className='form-control'
                             required
                           >
-                            <option value='men'>Men</option>
-                            <option value='women'>Women</option>
-                            <option value='kids'>Kids</option>
+                            <option value='Select an Option'>
+                              Select an option
+                            </option>
+                            <option value='Tools and Equipments'>
+                              Tools and Equipments
+                            </option>
+                            <option value='Machinery & Spare Parts'>
+                              Machinery & Spare Parts
+                            </option>
+                            <option value='Fasteners & Hardware'>
+                              Fasteners & Hardware
+                            </option>
+                            <option value='Safety & PPE'>Safety & PPE</option>
+                            <option value='Cleaning & Maintenance'>
+                              Cleaning & Maintenance
+                            </option>
+                            <option value='Electrical Supplies'>
+                              Electrical Supplies
+                            </option>
+                            <option value='Chemicals & Lubricants'>
+                              Chemicals & Lubricants
+                            </option>
+                            <option value='Material Handling & Storage'>
+                              Material Handling & Storage
+                            </option>
+                            <option value='Construction & Building Materials'>
+                              Construction & Building Materials
+                            </option>
                           </select>
                         </div>
 
@@ -298,7 +323,7 @@ const AdminDashboard = () => {
                     <tr key={singleProduct._id}>
                       <td>
                         <img
-                          src={`http://localhost:3006/products/${singleProduct.productImage}`}
+                          src={`http://localhost:3001/products/${singleProduct.productImage}`}
                           alt='Product'
                           className='img-fluid'
                           style={{ height: 80, width: 80, objectFit: "cover" }}
