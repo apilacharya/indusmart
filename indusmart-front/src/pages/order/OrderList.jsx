@@ -181,7 +181,7 @@ const OrderList = () => {
     );
   }
 
-  if (!filteredOrders.length) {
+  if (!filteredOrders?.length && !orders?.length) {
     return (
       <PageContainer>
         <OrderListContainer>

@@ -129,8 +129,10 @@ const Register = () => {
           <h2>Create an Account</h2>
           <form className='registration-form'>
             <div className='d-flex flex-wrap'>
-              <div className='form-group w-50 px-2'>
-                <label htmlFor='fullname'>Full Name</label>
+              <div className='form-group w-100 px-2'>
+                <label htmlFor='fullname'>
+                  Full Name <span className='text-danger'>*</span>
+                </label>
                 <input
                   onChange={handleFullName}
                   type='text'
@@ -144,7 +146,9 @@ const Register = () => {
               </div>
 
               <div className='form-group w-50 px-2'>
-                <label htmlFor='username'>Username</label>
+                <label htmlFor='username'>
+                  Username<span className='text-danger'>*</span>
+                </label>
                 <input
                   onChange={handleuserName}
                   type='text'
@@ -157,7 +161,9 @@ const Register = () => {
                 )}
               </div>
               <div className='form-group w-50 px-2'>
-                <label htmlFor='age'>Age</label>
+                <label htmlFor='age'>
+                  Age<span className='text-danger'>*</span>
+                </label>
                 <input
                   onChange={handleAge}
                   type='number'
@@ -169,7 +175,9 @@ const Register = () => {
               </div>
 
               <div className='form-group w-50 px-2'>
-                <label htmlFor='email'>Email</label>
+                <label htmlFor='email'>
+                  Email<span className='text-danger'>*</span>
+                </label>
                 <input
                   onChange={handleEmail}
                   type='email'
@@ -181,7 +189,9 @@ const Register = () => {
               </div>
 
               <div className='form-group w-50 px-2'>
-                <label htmlFor='phone'>Phone Number</label>
+                <label htmlFor='phone'>
+                  Phone Number<span className='text-danger'>*</span>
+                </label>
                 <input
                   onChange={handlePhone}
                   type='number'
@@ -193,7 +203,9 @@ const Register = () => {
               </div>
 
               <div className='form-group w-50 px-2'>
-                <label htmlFor='password'>Password</label>
+                <label htmlFor='password'>
+                  Password<span className='text-danger'>*</span>
+                </label>
                 <input
                   onChange={handlePassword}
                   type='password'
@@ -206,7 +218,9 @@ const Register = () => {
                 )}
               </div>
               <div className='form-group w-50 px-2'>
-                <label htmlFor='confirmPassword'>Confirm Password</label>
+                <label htmlFor='confirmPassword'>
+                  Confirm Password<span className='text-danger'>*</span>
+                </label>
                 <input
                   onChange={handleConfirmPassword}
                   type='password'

@@ -36,7 +36,7 @@ const ProductDescription = () => {
 
   const handleAddToCart = () => {
     const formData = new FormData();
-    formData.append("userID", user._id);
+    formData.append("userID", user?._id);
     formData.append("productID", id);
     formData.append("productPrice", productPrice);
     formData.append("quantity", quantity);
@@ -174,13 +174,19 @@ const ProductDescription = () => {
               <h5>Description:</h5>
               <p>{product.productDescription}</p>
             </div>
-            <div className='buttons'>
+            <div className='buttons d-flex flex-column'>
               <button
                 onClick={handleAddToCart}
+                disabled={!user?._id}
                 className='btn-add-to-cart btn btn-sm'
               >
                 Add to cart
               </button>
+              {!user?._id && (
+                <span className='text-danger'>
+                  You must be logged in to continue shopping
+                </span>
+              )}
             </div>
           </div>
         </div>
