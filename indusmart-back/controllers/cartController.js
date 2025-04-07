@@ -30,7 +30,7 @@ const addToCart = async (req, res) => {
 
       return res.json({
         success: false,
-        message: "Glass already in Cart",
+        message: "Product already in Cart",
       });
     }
 
@@ -47,7 +47,7 @@ const addToCart = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      message: "Glass added to cart successfully",
+      message: "Product added to cart successfully",
       data: newCart,
     });
   } catch (error) {
@@ -95,7 +95,7 @@ const updateCart = async (req, res) => {
     await Cart.findByIdAndUpdate(id, { quantity });
 
     // Respond with success message
-    res.status(200).json({ message: "Glass updated successfully" });
+    res.status(200).json({ message: "Product updated successfully" });
   } catch (error) {
     // Handle errors
     console.error("Error updating cart item:", error);
@@ -109,12 +109,12 @@ const removeFromCart = async (req, res) => {
     if (!removedFromCart) {
       return res.json({
         success: false,
-        message: "  Glass not found in cart!",
+        message: "  Product not found in cart!",
       });
     }
     res.json({
       success: true,
-      // message: " Glass removed from cart ",
+      // message: " Product removed from cart ",
     });
   } catch (error) {
     console.log(error);

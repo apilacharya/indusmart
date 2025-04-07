@@ -24,6 +24,8 @@ import AdminRoutes from "./pages/protected/adminprot";
 import Register from "./pages/registration/Register";
 import NavbarComponent from "./components/Navbar";
 import EsewaResponse from "./pages/cart/paymentGateway/esewa/EsewaResponse";
+import HomePage from "./pages/home/HomePage";
+import ContactUs from "./pages/contact/ContactUs";
 
 function UserLayout() {
   return (
@@ -40,7 +42,9 @@ function App() {
       <ToastContainer />
       <Routes>
         <Route element={<UserLayout />}>
-          <Route path='/' element={<Dashboard />} />
+          <Route path='/' element={<HomePage />} />
+          <Route path='/products' element={<Dashboard />} />
+          <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/profile' element={<Profile />} />
